@@ -27,7 +27,11 @@ def main() :
     # 날짜
     myDate = st.date_input("날짜")
     st.write(myDate)
-    
+
+    # 시간
+    myTime = st.time_input("시간")
+    st.write(myTime)
+
 if __name__ == "__main__":
     main()
 
