@@ -18,6 +18,11 @@ def main() :
     # URL 이미지 삽입
     st.image("https://res.cloudinary.com/dyd911kmh/image/upload/v1640050215/image27_frqkzv.png")
 
+    # 비디오 출력
+    with open("data/secret_of_success.mp4","rb") as rb :
+        video_file = rb.read()
+        st.video(video_file, start_time=1)
+
 if __name__ == "__main__":
     main()
 
