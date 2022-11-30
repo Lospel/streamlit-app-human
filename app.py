@@ -22,6 +22,12 @@ def main() :
     age = st.slider("나이", 1, 120)
     st.write(age)
 
+    # Select Slider
+    color = st.select_slider("색상 선택",
+                            options=["노란색","빨간색","파란색","흰색"]
+                            , value=("노란색","흰색"))
+    st.write(color)
+
 if __name__ == "__main__":
     main()
 
