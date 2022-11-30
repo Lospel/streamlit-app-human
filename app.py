@@ -11,23 +11,9 @@ from PIL import Image
 
 def main() :
     """코드작성"""
-    # 이미지 추가
-    img = Image.open("data/image_03.jpg")
-    st.image(img)
-
-    # URL 이미지 삽입
-    st.image("https://res.cloudinary.com/dyd911kmh/image/upload/v1640050215/image27_frqkzv.png")
-
-    # 비디오 출력
-    with open("data/secret_of_success.mp4","rb") as rb :
-        video_file = rb.read()
-        st.video(video_file, start_time=1)
-
-    # 오디오 출력
-    with open("data/song.mp3","rb") as rb :
-        audio_file = rb.read()
-        st.video(audio_file, format="audio/mp3")   
-
+    # 텍스트 Input
+    fname = st.text_input("이름 입력")
+    st.title(fname)
 
 if __name__ == "__main__":
     main()
