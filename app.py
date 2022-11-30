@@ -18,6 +18,9 @@ def main() :
     mulChoice = st.multiselect("언어 선택", proLan, default="SQL")
     st.write("선택:", mulChoice)
 
+    # 슬라이더
+    age = st.slider("나이", 1, 120)
+    st.write(age)
 
 if __name__ == "__main__":
     main()
