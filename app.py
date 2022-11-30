@@ -22,6 +22,8 @@ def main() :
         print("Hello World")
     end
     """
+    st.code(myCode, language="python")
+    
 if __name__ == "__main__":
     main()
 
