@@ -32,6 +32,10 @@ def main() :
     myTime = st.time_input("시간")
     st.write(myTime)
 
+    # Color Picker
+    color = st.color_picker("색상 선택")
+    st.write(color)
+
 if __name__ == "__main__":
     main()
 
