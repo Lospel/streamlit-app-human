@@ -24,6 +24,10 @@ def main() :
     number = st.number_input("숫자 입력")
     st.write(number)
 
+    # 날짜
+    myDate = st.date_input("날짜")
+    st.write(myDate)
+    
 if __name__ == "__main__":
     main()
 
