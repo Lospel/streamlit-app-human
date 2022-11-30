@@ -15,6 +15,9 @@ def main() :
     img = Image.open("data/image_03.jpg")
     st.image(img)
 
+    # URL 이미지 삽입
+    st.image("https://res.cloudinary.com/dyd911kmh/image/upload/v1640050215/image27_frqkzv.png")
+
 if __name__ == "__main__":
     main()
 
