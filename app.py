@@ -23,6 +23,12 @@ def main() :
         video_file = rb.read()
         st.video(video_file, start_time=1)
 
+    # 오디오 출력
+    with open("data/song.mp3","rb") as rb :
+        audio_file = rb.read()
+        st.video(audio_file, format="audio/mp3")   
+
+
 if __name__ == "__main__":
     main()
 
