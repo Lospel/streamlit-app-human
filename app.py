@@ -23,6 +23,10 @@ def main() :
     else:
         st.error("비활성화 상태")
 
+    # 체크박스
+    if st.checkbox("Show/Hide"):
+        st.text("무언가를 보여줘요")
+
 if __name__ == "__main__":
     main()
 
