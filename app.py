@@ -21,6 +21,11 @@ def main() :
     st.error("에러")
     st.exception("예외")
 
+    # superfunction
+    st.write("문자열")
+    st.write(1+2)
+    st.write(dir(int))
+
 if __name__ == "__main__":
     main()
 
