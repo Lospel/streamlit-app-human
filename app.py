@@ -20,6 +20,10 @@ def main() :
     message = st.text_area("입력해주세요!", height=100)
     st.write(message)
 
+    # 숫자 입력
+    number = st.number_input("숫자 입력")
+    st.write(number)
+
 if __name__ == "__main__":
     main()
 
