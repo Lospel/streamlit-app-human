@@ -129,3 +129,30 @@ def main() :
     with open("data/song.mp3","rb") as rb :
         audio_file = rb.read()
         st.video(audio_file, format="audio/mp3")
+
+def main() :
+    """코드작성"""
+    # 텍스트 Input
+    fname = st.text_input("이름 입력")
+    # st.title(fname)
+    st.write(fname)
+
+    # 텍스트 영역
+    message = st.text_area("입력해주세요!", height=100)
+    st.write(message)
+
+    # 숫자 입력
+    number = st.number_input("숫자 입력")
+    st.write(number)
+
+    # 날짜
+    myDate = st.date_input("날짜")
+    st.write(myDate)
+
+    # 시간
+    myTime = st.time_input("시간")
+    st.write(myTime)
+
+    # Color Picker
+    color = st.color_picker("색상 선택")
+    st.write(color)
