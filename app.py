@@ -16,6 +16,12 @@ def main() :
     st.title("데이터 프레임에 색상 입히기")
     st.dataframe(iris_df.style.highlight_max(axis=0))
 
+    # 코드 보여주기
+    myCode = """
+    def hello():
+        print("Hello World")
+    end
+    """
 if __name__ == "__main__":
     main()
 
