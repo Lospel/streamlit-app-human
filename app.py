@@ -15,6 +15,13 @@ def main() :
         st.write(f'이름 : {name.upper()}')
     if st.button("소문자"):
         st.write(f'이름 : {name.lower()}')
+    
+    # 활성화, 비활성화
+    status = st.radio('Status', ("활성화", "비활성화"))
+    if status == "활성화":
+        st.success("활성화 상태")
+    else:
+        st.error("비활성화 상태")
 
 if __name__ == "__main__":
     main()
