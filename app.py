@@ -28,6 +28,11 @@ def main() :
                             , value=("노란색","흰색"))
     st.write(color)
 
+    start_color, end_color = st.select_slider("색상 선택",
+                        options=["노란색","빨간색","파란색","흰색", "검정색"]
+                        , value=("노란색","흰색"))
+    st.write(start_color, end_color)
+
 if __name__ == "__main__":
     main()
 
