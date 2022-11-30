@@ -13,7 +13,7 @@ def main() :
     """코드작성"""
     # 이미지 추가
     img = Image.open("data/image_03.jpg")
-    st.write(img)
+    st.image(img)
 
 if __name__ == "__main__":
     main()
