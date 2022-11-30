@@ -13,7 +13,12 @@ def main() :
     """코드작성"""
     # 텍스트 Input
     fname = st.text_input("이름 입력")
-    st.title(fname)
+    # st.title(fname)
+    st.write(fname)
+
+    # 텍스트 영역
+    message = st.text_area("입력해주세요!", height=100)
+    st.write(message)
 
 if __name__ == "__main__":
     main()
