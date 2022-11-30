@@ -8,22 +8,14 @@ import pandas as pd
 
 def main() :
     """코드작성"""
-    iris_df = pd.read_csv("data/iris.csv")
-    st.dataframe(iris_df)
-    st.dataframe(iris_df, width=500, height=200)
+    # 버튼 입력
+    name = 'Held'
 
-    # 색상 추가
-    st.title("데이터 프레임에 색상 입히기")
-    st.dataframe(iris_df.style.highlight_max(axis=0))
+    if st.button("대문자"):
+        st.write(f'이름 : {name.upper()}')
+    if st.button("소문자"):
+        st.write(f'이름 : {name.lower()}')
 
-    # 코드 보여주기
-    myCode = """
-    def hello():
-        print("Hello World")
-    end
-    """
-    st.code(myCode, language="python")
-    
 if __name__ == "__main__":
     main()
 
