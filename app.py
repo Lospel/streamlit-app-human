@@ -26,6 +26,9 @@ def main() :
     # 체크박스
     if st.checkbox("Show/Hide"):
         st.text("무언가를 보여줘요")
+        
+    with st.expander('python'):
+        st.text("Hello Python")
 
 if __name__ == "__main__":
     main()
