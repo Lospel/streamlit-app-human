@@ -1,42 +1,22 @@
 # -*- coding: utf-8 -*-
-
-# core pkgs
 import streamlit as st
+import streamlit.components.v1 as stc
 
-# data pkgs
-import pandas as pd
+html_temp = '''
+<div style="background-color:#3872fb;padding:10px;border-radius:10px">
+    <h1 style="color:white;text-align:center;">IRIS 머신러닝 모형</h1>
+</div>
+'''
 
-# 이미지 라이브러리
-from PIL import Image
+dec_temp = '''
+### IRIS 예측 모델 개발
+- 시각화, ML앱 개발.
+### 데이터 소스
+- 어디서 가져옴.
+'''
 
-def main() :
-    """코드작성"""
-    # 텍스트 Input
-    fname = st.text_input("이름 입력")
-    # st.title(fname)
-    st.write(fname)
-
-    # 텍스트 영역
-    message = st.text_area("입력해주세요!", height=100)
-    st.write(message)
-
-    # 숫자 입력
-    number = st.number_input("숫자 입력")
-    st.write(number)
-
-    # 날짜
-    myDate = st.date_input("날짜")
-    st.write(myDate)
-
-    # 시간
-    myTime = st.time_input("시간")
-    st.write(myTime)
-
-    # Color Picker
-    color = st.color_picker("색상 선택")
-    st.write(color)
+def main():
+    stc.html(html_temp)
 
 if __name__ == "__main__":
     main()
-
-# streamlit run 파일명.py
