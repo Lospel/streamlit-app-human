@@ -62,10 +62,8 @@ def main():
         st.subheader('Home')       
         st.markdown(dec_temp, unsafe_allow_html=True)
     elif choice == "탐색적_자료분석":
-        # st.subheader('탐색적 자료분석')
         run_app()
     elif choice == "머신러닝":
-        # st.subheader('머신러닝')
         run_ml()
     elif choice == "About":
         st.subheader('About')

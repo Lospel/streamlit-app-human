@@ -52,9 +52,6 @@ def run_app():
         산점도, 박스플롯, 스트립플롯, 페어플롯 = st.tabs(['산점도', '박스플롯', '스트립플롯', '페어플롯'])
         with 산점도:
             st.success("파란색: Setosa, 주황색: Versicolor, 녹색: Virginica")
-            
-            # species_select = st.selectbox('종_선택', ('Iris-setosa', 'Iris-versicolor', 'Iris-virginica'))
-            # choise_sp = iris_data[iris_data['species'] == species_select]
 
             x_select = st.selectbox('산점도_가로',('sepal_width', 'petal_width'))
             y_select = st.selectbox('산점도_세로',('sepal_length', 'petal_length'))

@@ -20,30 +20,19 @@ def run_ml() :
         petal_length = st.select_slider('Petal Length', options=np.arange(1,11))
         petal_width = st.select_slider('Petal Width', options=np.arange(1,11))
         sample = [sepal_length, sepal_width, petal_length, petal_width]
-        # st.write(sample)
 
     with number2 :
         st.subheader("예측 결과를 확인해주세요.")
-        # st.write(sample)
 
         # 리스트를 2차원 배열로 만듬
         single_sample = np.array(sample).reshape(1,-1)
 
-        # st.write(single_sample.shape)
-        # st.write(single_sample)
-
         # 모델 불러오기
         model = load_model("models/logistic_regression_model_iris_221208.pkl")
-
-        # st.write(model.classes_)
 
         prediction = model.predict(single_sample)
         pred_porb = model.predict_proba(single_sample)
 
-        # st.write(prediction)
-        # st.write(model.feature_names_in_)
-        # st.write(model.classes_)
-        # st.write(pred_porb)
         st.write(pd.DataFrame(pred_porb
             , columns=['Setosa','Versicolor','Virginica']
             , index=["확률"]))
